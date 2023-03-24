@@ -39,11 +39,6 @@ btnPedir.addEventListener("click", () => {
 
   puntosJugador = puntosJugador + valorCarta(carta);
   puntosHTML[0].innerText = puntosJugador;
-
-  // <img class="carta" src="assets/cartas/2C.png">
-  //   const imgCarta = document.createElement("img");
-  //   imgCarta.src = `assets/cartas/${carta}.png`; //3H, JD
-  //   imgCarta.classList.add("carta");
   const imgCarta = crearCarta(carta);
   divCartasJugador.append(imgCarta);
 
